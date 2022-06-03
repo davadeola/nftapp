@@ -16,6 +16,7 @@ export const CircleButton = ({ imageUrl, handlePress, ...props }) => {
         ...SHADOWS.light,
         ...props,
       }}
+      onPress={handlePress}
     >
       <Image
         source={imageUrl}
@@ -38,6 +39,7 @@ export const RectButton = ({ minWidth, fontSize, handlePress, ...props }) => {
         padding: SIZES.small,
         ...props,
       }}
+      onPress={handlePress}
     >
       <Text
         style={{
